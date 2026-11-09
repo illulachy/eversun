@@ -163,12 +163,12 @@ input[type=range]{padding:0;border:0;accent-color:var(--sun);margin-top:8px}inpu
 <section id="bang-gia" class="alt"><div class="wrap">
  <h2>Bảng giá dịch vụ</h2>
  <div class="grid g3">
-  <div class="card price"><h3>Theo giờ</h3><div class="big">80.000đ <small>/ giờ</small></div>
+  <div class="card price"><h3>Theo giờ</h3><div class="big">120.000đ <small>/ giờ</small></div>
    <ul><li>Tối thiểu 2 giờ mỗi lần</li><li>Trò chuyện, đi dạo, nhắc thuốc</li><li>Phù hợp ông bà còn khỏe</li></ul><a class="btn ghost" href="#dat-lich">Chọn gói này</a></div>
-  <div class="card price hot"><span class="badge">Được chọn nhiều</span><h3>Theo buổi</h3><div class="big">300.000đ <small>/ buổi 4 giờ</small></div>
+  <div class="card price hot"><span class="badge">Được chọn nhiều</span><h3>Theo buổi</h3><div class="big">450.000đ <small>/ buổi 4 giờ</small></div>
    <ul><li>Buổi sáng hoặc buổi chiều</li><li>Sinh hoạt, bữa ăn, theo dõi sức khỏe</li><li>Báo cáo cho gia đình sau ca</li></ul><a class="btn" href="#dat-lich">Chọn gói này</a></div>
-  <div class="card price"><h3>Theo tháng</h3><div class="big">9.500.000đ <small>/ tháng</small></div>
-   <ul><li>Lịch cố định, một người chăm sóc chính</li><li>Đưa đi khám, thủ tục hành chính</li><li>Bác sĩ cố vấn khi cần</li></ul><a class="btn ghost" href="#dat-lich">Chọn gói này</a></div>
+  <div class="card price"><h3>Theo tháng</h3><div class="big">3.800.000đ <small>/ tháng</small></div>
+   <ul><li>8 buổi mỗi tháng, tổng 32 giờ</li><li>Lịch cố định, một người chăm sóc chính</li><li>Đưa đi khám, thủ tục hành chính</li><li>Bác sĩ cố vấn khi cần</li></ul><a class="btn ghost" href="#dat-lich">Chọn gói này</a></div>
  </div>
  <p class="note" style="margin-top:18px">Giá tham khảo, có thể thay đổi theo tình trạng sức khỏe và yêu cầu chăm sóc của ông bà. Chúng tôi báo giá cụ thể sau buổi tư vấn.</p>
 </div></section>
@@ -258,7 +258,7 @@ function save(a){mem=a;try{localStorage.setItem(K,JSON.stringify(a))}catch(e){}}
 function fmt(n){return (Math.round(n/1000)*1000).toLocaleString('vi-VN')+'đ'}
 var cur={};
 function calc(){var t=$('ct').value,w=+$('cw').value,h=+$('ch').value,v=+$('cv').value,x=$('cx').checked,base,d;
- if(t==='gio'){base=80000*h*w*4.3;d=h+' giờ mỗi lần, '+w+' lần mỗi tuần'}else if(t==='buoi'){base=300000*w*4.3;d=w+' buổi mỗi tuần'}else{base=9500000;d='Lịch cố định, một người chăm sóc chính'}
+ if(t==='gio'){base=120000*h*w*4.3;d=h+' giờ mỗi lần, '+w+' lần mỗi tuần'}else if(t==='buoi'){base=450000*w*4.3;d=w+' buổi mỗi tuần'}else{base=3800000;d='8 buổi mỗi tháng, tổng 32 giờ'}
  var up=x?base*.2:0,vis=v*120000,tot=base+up+vis;
  $('cwv').textContent=w;$('chv').textContent=h;$('cvv').textContent=v;
  $('rowW').style.display=t==='thang'?'none':'';$('rowH').style.display=t==='gio'?'':'none';
