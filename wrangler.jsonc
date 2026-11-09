@@ -1,0 +1,8 @@
+{
+  // Static EVER SUN page on Cloudflare Workers (account illulatao), served at eversun.ilvs.space.
+  "name": "eversun",
+  "compatibility_date": "2026-11-01",
+  "account_id": "b88ec7f5fe236024e2b067b615fc563d",
+  "assets": { "directory": "." },
+  "routes": [{ "pattern": "eversun.ilvs.space", "custom_domain": true }]
+}
