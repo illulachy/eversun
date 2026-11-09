@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EVER SUN – Dịch vụ chăm sóc người già tại nhà TP. Hồ Chí Minh</title>
+<meta name="description" content="EVER SUN cung cấp người chăm sóc người già tại nhà theo giờ, theo buổi, theo tháng tại TP. Hồ Chí Minh.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Be+Vietnam+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffdf8;--surface:#fff3dc;--card:#fff;--ink:#1f2a44;--muted:#4d5670;--sun:#f4a62a;--sun-d:#9a5b00;--sage:#3f7a68;--line:#eadfc8;--hero:#1f2a44;--hero-ink:#fff7e6;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#141a2b;--surface:#1c243b;--card:#222c47;--ink:#fbf3e2;--muted:#b9c0d4;--sun:#f6b445;--sun-d:#f6b445;--sage:#7cc2ab;--line:#33405f;--hero:#0e1322;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#141a2b;--surface:#1c243b;--card:#222c47;--ink:#fbf3e2;--muted:#b9c0d4;--sun:#f6b445;--sun-d:#f6b445;--sage:#7cc2ab;--line:#33405f;--hero:#0e1322;color-scheme:dark}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 70px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 18px/1.7 "Be Vietnam Pro",system-ui,-apple-system,"Segoe UI",sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:Fraunces,Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em;font-weight:700}
+h2{font-size:clamp(1.8rem,4vw,2.5rem)}h3{font-size:1.25rem}
+p{margin:0 0 1em;max-width:62ch}a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+section{padding:72px 0}.alt{background:var(--surface)}.muted{color:var(--muted)}
+.top{background:var(--hero);color:#e6dcc4;font-size:.9rem;padding:6px 0}
+.top .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 22px;max-width:1080px;margin:0 auto}
+.logo{font-family:Fraunces,Georgia,serif;font-weight:700;font-size:1.35rem;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{width:22px;height:22px;border-radius:50%;background:var(--sun)}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;font-size:.95rem;font-weight:500}
+nav ul a{text-decoration:none;color:var(--muted)}nav ul a:hover{color:var(--ink)}
+.btn{display:inline-block;background:var(--sun);color:#1f2a44;padding:14px 26px;border-radius:999px;text-decoration:none;border:2px solid var(--sun);font:600 1rem "Be Vietnam Pro",sans-serif;cursor:pointer}
+.btn:hover{filter:brightness(1.07)}.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.hero{background:var(--hero);color:var(--hero-ink);padding:64px 0 0;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:end}
+.hero h1{font-size:clamp(2.2rem,5.2vw,3.7rem);line-height:1.1;margin:0 0 .4em}
+.hero p{font-size:1.15rem;color:#e6dcc4}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin:24px 0 20px}
+.hero .tick{list-style:none;padding:0;margin:0 0 56px;display:flex;gap:8px 22px;flex-wrap:wrap;font-size:.98rem;color:#e6dcc4}
+.sun{width:100%;height:auto;display:block}
+.ray{transform-origin:200px 250px;animation:spin 90s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.ray{animation:none}html{scroll-behavior:auto}}
+.grid{display:grid;gap:22px}.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card p{margin:0;color:var(--muted);font-size:1rem}
+.ico{width:46px;height:46px;border-radius:50%;background:var(--surface);display:grid;place-items:center;font-size:1.4rem;margin-bottom:12px}
+.alt .ico{background:var(--bg)}
+.steps{counter-reset:s;padding:0;list-style:none;margin:0}
+.steps li{counter-increment:s;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--sun);color:#1f2a44;font-weight:700;margin-bottom:12px}
+.steps p{margin:0;color:var(--muted);font-size:1rem}
+.av{width:64px;height:64px;border-radius:50%;background:var(--sage);color:#fff;display:grid;place-items:center;font:700 1.4rem Fraunces,Georgia,serif;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{font-size:.82rem;background:var(--surface);padding:2px 10px;border-radius:99px}
+.price{display:flex;flex-direction:column}
+.price .big{font-family:Fraunces,Georgia,serif;font-size:1.9rem;font-weight:700;margin:4px 0 10px}
+.price .big small{font-size:1rem;font-weight:500;color:var(--muted)}
+.price ul{padding-left:20px;margin:0 0 20px;flex:1;color:var(--muted);font-size:1rem}
+.price.hot{border:3px solid var(--sun)}
+.badge{display:inline-block;align-self:flex-start;font-size:.85rem;font-weight:600;background:var(--surface);color:var(--sun-d);padding:2px 12px;border-radius:99px;margin-bottom:8px}
+.note{font-size:.92rem;color:var(--muted)}
+.quote p{font-size:1.05rem;color:var(--ink);margin-bottom:14px}
+.quote b{font-size:.95rem}.quote span{display:block;font-size:.9rem;color:var(--muted)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:600;padding:14px 0;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";font-size:1.4rem;line-height:1.2;color:var(--sun-d)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:0 0 16px}
+.areas{display:flex;flex-wrap:wrap;gap:10px;padding:0;list-style:none;margin:0}
+.areas li{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 18px;font-size:1rem}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.98rem}
+input,select,textarea{width:100%;font:inherit;padding:13px 14px;border-radius:12px;border:2px solid var(--line);background:var(--card);color:var(--ink);margin-top:4px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#ok{display:none;background:var(--surface);border-left:6px solid var(--sage);padding:16px 20px;border-radius:12px}
+.info p{margin:0 0 14px}.info b{display:block}
+footer{background:var(--hero);color:#e6dcc4;padding:40px 0 90px;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}footer p{margin:0 0 6px;max-width:none}
+.call{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+@media (max-width:900px){
+ .hero .wrap,.contact,.g2,.g3,.g4{grid-template-columns:1fr}
+ .g4.steps{grid-template-columns:1fr 1fr}
+ nav ul{display:none}section{padding:52px 0}.hero .tick{margin-bottom:24px}.row{grid-template-columns:1fr}
+}
+@media (max-width:480px){.g4.steps{grid-template-columns:1fr}.top .wrap span:last-child{display:none}}
+input[type=range]{padding:0;border:0;accent-color:var(--sun);margin-top:8px}input[type=checkbox]{width:auto;margin:0 10px 0 0;transform:scale(1.3)}
+.calc{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;align-items:start}.ctl{display:grid;gap:20px}.chk{display:flex;align-items:flex-start}
+.res{background:var(--hero);color:var(--hero-ink);border:0}.res p{color:#e6dcc4}.tot{font:700 2.6rem/1.1 Fraunces,Georgia,serif;color:var(--sun);margin:6px 0 12px}#cbd{white-space:pre-line;margin-bottom:18px}
+.req{display:grid;grid-template-columns:1fr auto;gap:10px 18px;background:var(--card);border:1px solid var(--line);border-left:6px solid var(--sun);border-radius:14px;padding:16px 20px;margin-bottom:12px}.req.done{border-left-color:var(--sage);opacity:.75}.req p{margin:0;font-size:.98rem;color:var(--muted);max-width:none}.req .acts{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sm{font:600 .9rem "Be Vietnam Pro",sans-serif;padding:8px 16px;border-radius:99px;border:2px solid var(--line);background:transparent;color:var(--ink);cursor:pointer}.sm:hover{border-color:var(--sun)}
+@media (max-width:900px){.calc{grid-template-columns:1fr}.req{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>Hotline tư vấn: <b>0822 150 027</b> (7:00 – 21:00 mỗi ngày)</span><span>Phục vụ tại TP. Hồ Chí Minh</span></div></div>
+<header><nav>
+ <a class="logo" href="#top"><i></i>EVER SUN</a>
+ <ul><li><a href="#dich-vu">Dịch vụ</a></li><li><a href="#quy-trinh">Quy trình</a></li><li><a href="#nhan-su">Đội ngũ</a></li><li><a href="#bang-gia">Bảng giá</a></li><li><a href="#tinh-gia">Tính giá</a></li><li><a href="#quan-ly">Quản lý</a></li><li><a href="#hoi-dap">Hỏi đáp</a></li></ul>
+ <a class="btn" href="#dat-lich">Đặt lịch tư vấn</a>
+</nav></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Nơi ánh dương sưởi ấm tuổi xế chiều</h1>
+  <p>Người chăm sóc tận tâm, được đào tạo bài bản, đến tận nhà chăm ông bà, cha mẹ bạn theo giờ, theo buổi hoặc theo tháng.</p>
+  <div class="cta"><a class="btn" href="#dat-lich">Đặt lịch tư vấn miễn phí</a><a class="btn ghost" href="tel:0822150027">Gọi 0822 150 027</a></div>
+  <ul class="tick"><li>✓ Hồ sơ nhân sự minh bạch</li><li>✓ Hợp đồng cam kết rõ ràng</li><li>✓ Báo cáo sau mỗi ca</li></ul>
+ </div>
+ <svg class="sun" viewBox="0 0 400 280" role="img" aria-label="Mặt trời lên trên đường chân trời">
+  <g class="ray" stroke="#f4a62a" stroke-width="6" stroke-linecap="round" opacity=".85"><path d="M200 20v30M200 410v-30M0 230h30M400 230h-30M58 88l21 21M342 88l-21 21M58 372l21-21M342 372l-21-21"/></g>
+  <circle cx="200" cy="250" r="96" fill="#f4a62a"/><circle cx="200" cy="250" r="70" fill="#ffd27a"/>
+  <rect y="250" width="400" height="30" fill="#0e1322" opacity=".55"/>
+ </svg>
+</div></div>
+
+<section class="alt"><div class="wrap">
+ <h2>Vì sao các gia đình tin tưởng EVER SUN</h2>
+ <div class="grid g4">
+  <div class="card"><div class="ico">🛡️</div><h3>Tuyển chọn kỹ</h3><p>Ưu tiên người từng làm điều dưỡng, có lòng yêu thương người già và đạo đức tốt.</p></div>
+  <div class="card"><div class="ico">🎓</div><h3>Đào tạo chuyên sâu</h3><p>Kỹ năng chăm sóc, sơ cứu cơ bản và tâm lý người cao tuổi, có bác sĩ cố vấn.</p></div>
+  <div class="card"><div class="ico">📋</div><h3>Minh bạch</h3><p>Gia đình xem hồ sơ và năng lực người chăm sóc trước khi bắt đầu.</p></div>
+  <div class="card"><div class="ico">💬</div><h3>Phản hồi sát sao</h3><p>Nhận tóm tắt sau mỗi ca và góp ý để chúng tôi cải thiện ngay.</p></div>
+ </div>
+</div></section>
+
+<section id="dich-vu"><div class="wrap">
+ <h2>Dịch vụ chăm sóc người già tại nhà</h2>
+ <p class="muted">Mỗi gia đình mỗi khác. Bạn chọn đúng việc ông bà cần, chúng tôi lo phần còn lại.</p>
+ <div class="grid g3">
+  <div class="card"><div class="ico">🛁</div><h3>Chăm sóc sinh hoạt</h3><p>Tắm rửa, vệ sinh cá nhân, thay quần áo, hỗ trợ đi lại, chuẩn bị bữa ăn đúng khẩu vị.</p></div>
+  <div class="card"><div class="ico">💊</div><h3>Theo dõi sức khỏe</h3><p>Nhắc uống thuốc, đo huyết áp, đường huyết, sơ cứu khi cần và báo ngay cho gia đình.</p></div>
+  <div class="card"><div class="ico">🏥</div><h3>Đưa đi khám bệnh</h3><p>Đi cùng ông bà đến bệnh viện, phòng khám, lấy thuốc, tái khám đúng lịch.</p></div>
+  <div class="card"><div class="ico">☕</div><h3>Trò chuyện, đồng hành</h3><p>Tâm sự, đọc báo, đi dạo, chơi cờ, giúp ông bà bớt cô đơn.</p></div>
+  <div class="card"><div class="ico">📑</div><h3>Thủ tục hành chính</h3><p>Đi cùng ông bà làm giấy tờ, nhận lương hưu, các việc cần người đi kèm.</p></div>
+  <div class="card"><div class="ico">🏠</div><h3>Chăm sóc sau bệnh</h3><p>Hỗ trợ phục hồi tại nhà sau ốm, sau nằm viện, theo hướng dẫn của bác sĩ.</p></div>
+ </div>
+</div></section>
+
+<section id="quy-trinh" class="alt"><div class="wrap">
+ <h2>Bắt đầu chỉ với bốn bước</h2>
+ <ol class="steps grid g4">
+  <li><h3>Tư vấn</h3><p>Gặp trực tiếp hoặc gọi điện, lắng nghe tình trạng và nhu cầu của ông bà.</p></li>
+  <li><h3>Chọn gói</h3><p>Theo giờ, theo buổi hoặc theo tháng. Đổi gói được khi nhu cầu thay đổi.</p></li>
+  <li><h3>Ghép người chăm sóc</h3><p>Bạn xem hồ sơ, gặp mặt và đồng ý rồi mới bắt đầu.</p></li>
+  <li><h3>Chăm sóc và phản hồi</h3><p>Báo cáo sau mỗi ca, đánh giá từ ông bà và con cháu.</p></li>
+ </ol>
+</div></section>
+
+<section id="nhan-su"><div class="wrap">
+ <h2>Đội ngũ chăm sóc</h2>
+ <p class="muted">Mỗi người chăm sóc có hồ sơ riêng: kinh nghiệm, chứng chỉ và đánh giá từ gia đình.</p>
+ <div class="grid g3">
+  <div class="card"><div class="av">LT</div><h3>Cô Lan Thanh</h3><p>8 năm kinh nghiệm điều dưỡng tại bệnh viện, chuyên chăm người sau tai biến.</p><div class="tags"><span>Điều dưỡng</span><span>Sơ cứu</span><span>Phục hồi chức năng</span></div></div>
+  <div class="card"><div class="av">MH</div><h3>Chị Minh Hạnh</h3><p>5 năm chăm sóc người cao tuổi tại nhà, nhẹ nhàng, kiên nhẫn, nấu ăn ngon.</p><div class="tags"><span>Sinh hoạt</span><span>Dinh dưỡng</span><span>Đồng hành</span></div></div>
+  <div class="card"><div class="av">VP</div><h3>Chú Văn Phúc</h3><p>Cựu nhân viên y tế, vững kỹ năng đo chỉ số sinh tồn và đưa đi khám bệnh.</p><div class="tags"><span>Theo dõi sức khỏe</span><span>Đưa đi khám</span></div></div>
+ </div>
+</div></section>
+
+<section id="bang-gia" class="alt"><div class="wrap">
+ <h2>Bảng giá dịch vụ</h2>
+ <div class="grid g3">
+  <div class="card price"><h3>Theo giờ</h3><div class="big">80.000đ <small>/ giờ</small></div>
+   <ul><li>Tối thiểu 2 giờ mỗi lần</li><li>Trò chuyện, đi dạo, nhắc thuốc</li><li>Phù hợp ông bà còn khỏe</li></ul><a class="btn ghost" href="#dat-lich">Chọn gói này</a></div>
+  <div class="card price hot"><span class="badge">Được chọn nhiều</span><h3>Theo buổi</h3><div class="big">300.000đ <small>/ buổi 4 giờ</small></div>
+   <ul><li>Buổi sáng hoặc buổi chiều</li><li>Sinh hoạt, bữa ăn, theo dõi sức khỏe</li><li>Báo cáo cho gia đình sau ca</li></ul><a class="btn" href="#dat-lich">Chọn gói này</a></div>
+  <div class="card price"><h3>Theo tháng</h3><div class="big">9.500.000đ <small>/ tháng</small></div>
+   <ul><li>Lịch cố định, một người chăm sóc chính</li><li>Đưa đi khám, thủ tục hành chính</li><li>Bác sĩ cố vấn khi cần</li></ul><a class="btn ghost" href="#dat-lich">Chọn gói này</a></div>
+ </div>
+ <p class="note" style="margin-top:18px">Giá tham khảo, có thể thay đổi theo tình trạng sức khỏe và yêu cầu chăm sóc của ông bà. Chúng tôi báo giá cụ thể sau buổi tư vấn.</p>
+</div></section>
+
+<section id="tinh-gia"><div class="wrap">
+ <h2>Tính chi phí dự kiến mỗi tháng</h2>
+ <p class="muted">Chọn nhu cầu của ông bà, chi phí hiện ngay bên cạnh.</p>
+ <div class="calc">
+  <div class="card ctl">
+   <label>Gói chăm sóc<select id="ct"><option value="gio">Theo giờ</option><option value="buoi" selected>Theo buổi</option><option value="thang">Theo tháng</option></select></label>
+   <label id="rowH">Số giờ mỗi lần: <b id="chv">3</b><input id="ch" type="range" min="2" max="8" value="3"></label>
+   <label id="rowW">Số lần mỗi tuần: <b id="cwv">3</b><input id="cw" type="range" min="1" max="7" value="3"></label>
+   <label>Đưa đi khám mỗi tháng: <b id="cvv">1</b> lần<input id="cv" type="range" min="0" max="4" value="1"></label>
+   <label class="chk"><input id="cx" type="checkbox"><span>Ông bà cần nâng đỡ khi đi lại hoặc nằm một chỗ (+20%)</span></label>
+  </div>
+  <div class="card res"><p>Chi phí dự kiến mỗi tháng</p><div class="tot" id="ctot">0đ</div><p id="cbd"></p><button class="btn" type="button" id="cbook">Đặt lịch với lựa chọn này</button><p class="note" style="margin:14px 0 0;color:#cfc5ad">Giá tham khảo, báo giá chính xác sau buổi tư vấn.</p></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Gia đình nói gì về EVER SUN</h2>
+ <div class="grid g3">
+  <div class="card quote"><p>“Mẹ tôi hay quên uống thuốc. Từ khi có cô Thanh đến mỗi buổi sáng, tôi đi làm yên tâm hơn nhiều.”</p><b>Chị Ngọc Anh</b><span>Quận 7</span></div>
+  <div class="card quote"><p>“Ông tôi vui hẳn lên vì có người trò chuyện và đưa đi dạo. Sau ca nào gia đình cũng nhận được báo cáo.”</p><b>Anh Quốc Bảo</b><span>Thủ Đức</span></div>
+  <div class="card quote"><p>“Tôi được xem hồ sơ và gặp người chăm sóc trước. Cảm giác rất minh bạch và đáng tin.”</p><b>Chị Thu Hà</b><span>Bình Thạnh</span></div>
+ </div>
+</div></section>
+
+<section id="hoi-dap" class="alt"><div class="wrap">
+ <h2>Câu hỏi thường gặp</h2>
+ <div style="max-width:760px">
+  <details><summary>Người chăm sóc có được kiểm tra lý lịch không?</summary><p>Có. Mọi nhân sự đều qua phỏng vấn, kiểm tra hồ sơ, đào tạo và ký cam kết trước khi nhận ca.</p></details>
+  <details><summary>Tôi có thể đổi người chăm sóc nếu chưa hợp không?</summary><p>Được. Bạn báo cho chúng tôi, chúng tôi sắp xếp người khác phù hợp hơn mà không tính thêm phí.</p></details>
+  <details><summary>Nếu ông bà đột ngột có vấn đề sức khỏe thì sao?</summary><p>Người chăm sóc được đào tạo sơ cứu cơ bản, báo ngay cho gia đình và liên hệ cấp cứu khi cần, có bác sĩ cố vấn hỗ trợ.</p></details>
+  <details><summary>Tôi có thể thuê đột xuất trong ngày không?</summary><p>Có thể, tùy lịch người chăm sóc. Hãy gọi hotline để được sắp xếp nhanh nhất.</p></details>
+  <details><summary>Thanh toán như thế nào?</summary><p>Bạn thanh toán theo gói đã chọn bằng tiền mặt hoặc chuyển khoản. Mọi khoản phí được ghi rõ trong hợp đồng.</p></details>
+  <details><summary>Có phục vụ ở khu vực của tôi không?</summary><p>Hiện chúng tôi phục vụ nhiều quận tại TP. Hồ Chí Minh, xem danh sách bên dưới hoặc gọi hotline để kiểm tra.</p></details>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Khu vực phục vụ</h2>
+ <ul class="areas"><li>Quận 1</li><li>Quận 3</li><li>Quận 4</li><li>Quận 5</li><li>Quận 7</li><li>Quận 10</li><li>Bình Thạnh</li><li>Phú Nhuận</li><li>Gò Vấp</li><li>Tân Bình</li><li>Thủ Đức</li></ul>
+</div></section>
+
+<section id="dat-lich" class="alt"><div class="wrap contact">
+ <div>
+  <h2>Đặt lịch tư vấn miễn phí</h2>
+  <p class="muted">Để lại thông tin, chúng tôi gọi lại trong vòng 30 phút trong giờ làm việc.</p>
+  <form id="f">
+   <div class="row"><label>Họ và tên<input required name="n" autocomplete="name"></label>
+   <label>Số điện thoại<input required name="p" type="tel" autocomplete="tel"></label></div>
+   <div class="row"><label>Quận / huyện<input name="q"></label>
+   <label>Gói quan tâm<select name="g"><option>Theo giờ</option><option>Theo buổi</option><option>Theo tháng</option><option>Chưa rõ, cần tư vấn</option></select></label></div>
+   <label>Tình trạng của ông bà (không bắt buộc)<textarea name="m" rows="3"></textarea></label>
+   <button class="btn" type="submit">Gửi yêu cầu tư vấn</button>
+   <div id="ok" role="status">Cảm ơn bạn. EVER SUN đã nhận yêu cầu và sẽ gọi lại sớm.</div>
+  </form>
+ </div>
+ <div class="info">
+  <h2>Liên hệ</h2>
+  <p><b>Hotline</b><a href="tel:0822150027">0822 150 027</a></p>
+  <p><b>Email</b>lienhe@eversun.vn</p>
+  <p><b>Địa chỉ</b>123 Đường Ví Dụ, TP. Hồ Chí Minh</p>
+  <p><b>Giờ làm việc</b>7:00 – 21:00, tất cả các ngày trong tuần</p>
+ </div>
+</div></section>
+<section id="quan-ly" class="alt"><div class="wrap">
+ <h2>Quản lý yêu cầu tư vấn</h2>
+ <p class="muted">Dành cho nhân viên EVER SUN. Mỗi yêu cầu khách gửi ở form phía trên sẽ hiện ở đây. Dữ liệu lưu trên trình duyệt này.</p>
+ <p><b id="cnt">0 yêu cầu</b></p>
+ <div id="list"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div><p><b>EVER SUN</b></p><p>Nơi ánh dương sưởi ấm tuổi xế chiều</p></div>
+ <div><p>© 2026 EVER SUN. Bảo lưu mọi quyền.</p><p>Hotline 0822 150 027 · lienhe@eversun.vn</p></div>
+</div></footer>
+<a class="btn call" href="tel:0822150027">📞 Gọi ngay</a>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)},K='eversun_req',mem=[];
+function load(){try{var v=localStorage.getItem(K);return v?JSON.parse(v):mem}catch(e){return mem}}
+function save(a){mem=a;try{localStorage.setItem(K,JSON.stringify(a))}catch(e){}}
+function fmt(n){return (Math.round(n/1000)*1000).toLocaleString('vi-VN')+'đ'}
+var cur={};
+function calc(){var t=$('ct').value,w=+$('cw').value,h=+$('ch').value,v=+$('cv').value,x=$('cx').checked,base,d;
+ if(t==='gio'){base=80000*h*w*4.3;d=h+' giờ mỗi lần, '+w+' lần mỗi tuần'}else if(t==='buoi'){base=300000*w*4.3;d=w+' buổi mỗi tuần'}else{base=9500000;d='Lịch cố định, một người chăm sóc chính'}
+ var up=x?base*.2:0,vis=v*120000,tot=base+up+vis;
+ $('cwv').textContent=w;$('chv').textContent=h;$('cvv').textContent=v;
+ $('rowW').style.display=t==='thang'?'none':'';$('rowH').style.display=t==='gio'?'':'none';
+ $('ctot').textContent=fmt(tot);
+ $('cbd').textContent=d+': '+fmt(base)+(x?'\nNâng đỡ thêm: '+fmt(up):'')+(v?'\nĐưa đi khám '+v+' lần: '+fmt(vis):'');
+ cur={t:t,d:d,tot:tot};}
+['ct','cw','ch','cv','cx'].forEach(function(i){$(i).addEventListener('input',calc)});calc();
+$('cbook').addEventListener('click',function(){var m={gio:'Theo giờ',buoi:'Theo buổi',thang:'Theo tháng'};
+ var f=$('f');f.g.value=m[cur.t];f.m.value='Nhu cầu: '+cur.d+'. Chi phí dự kiến '+fmt(cur.tot)+' mỗi tháng.';
+ $('dat-lich').scrollIntoView({behavior:'smooth'});f.n.focus({preventScroll:true});});
+function render(){var a=load(),l=$('list');l.textContent='';
+ $('cnt').textContent=a.length+' yêu cầu, '+a.filter(function(x){return !x.done}).length+' chưa gọi lại';
+ if(!a.length){var p=document.createElement('p');p.className='note';p.textContent='Chưa có yêu cầu nào. Hãy gửi thử một yêu cầu ở form đặt lịch phía trên.';l.appendChild(p);return}
+ a.forEach(function(r,i){var d=document.createElement('div');d.className='req'+(r.done?' done':'');
+ var c=document.createElement('div');var b=document.createElement('b');b.textContent=r.n+' – '+r.p;c.appendChild(b);
+ [r.g+(r.q?', '+r.q:'')+', gửi lúc '+r.at,r.m].forEach(function(s){if(s){var p=document.createElement('p');p.textContent=s;c.appendChild(p)}});
+ var ac=document.createElement('div');ac.className='acts';
+ var b1=document.createElement('button');b1.className='sm';b1.type='button';b1.textContent=r.done?'Đã gọi lại':'Đánh dấu đã gọi lại';
+ b1.onclick=function(){var x=load();x[i].done=!x[i].done;save(x);render()};
+ var b2=document.createElement('button');b2.className='sm';b2.type='button';b2.textContent='Xóa';
+ b2.onclick=function(){var x=load();x.splice(i,1);save(x);render()};
+ ac.appendChild(b1);ac.appendChild(b2);d.appendChild(c);d.appendChild(ac);l.appendChild(d)});}
+$('f').addEventListener('submit',function(e){e.preventDefault();var f=this,a=load();
+ a.unshift({n:f.n.value,p:f.p.value,q:f.q.value,g:f.g.value,m:f.m.value,at:new Date().toLocaleString('vi-VN'),done:false});
+ save(a);render();$('ok').style.display='block';f.reset();$('quan-ly').scrollIntoView({behavior:'smooth'});});
+render();
+})();
+</script>
+</body>
+</html>
